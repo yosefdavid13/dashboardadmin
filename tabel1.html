@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Dashboard-Ku Admin</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Dashboard-Ku Admin</h3>
+            </div>
+
+            <ul class="list-unstyled components" >
+                <p>Yosef David Wibowo S. </p>
+                <li >
+                    <a href="index.html">Dashboard</a>
+                </li>
+                <li>
+                    <a href="widget.html">Widget</a>
+                </li>
+                <li>
+                    <a href="#">Chart</a>
+                </li>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Tabel</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li class="active">
+                            <a href="#">Tabel 1</a>
+                        </li>
+                        <li>
+                            <a href="tabel2.html">Tabel 2</a>
+                        </li>
+                        <li>
+                            <a href="tabel3.html">Tabel 3</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="download">LOGOUT</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Dashboard Admin</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Profile</a>
+                            </li>
+                            <!--
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            -->
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h2>Tabel 1</h2>
+            <!--Tabel-->
+        <table class="table table-bordered" id="tabel1">
+
+            <thead>
+              <tr>
+				  <th>No</th>
+                <th >Id Barang</th>
+                <th >Nama Barang </th>
+                <th >Total Barang</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+
+                <!-- end inputan-->
+
+              <tr id="data-1">
+				  <td>1</td>
+                <td>9120</td>
+                <td>Laptop Asus X441</td>
+                <td>35</td>
+                <td>
+                    
+
+                    <button type="button" class="btn btn-sm btn-warning" id="edit"  >Edit</button> 
+                    <button type="button" id="btn" class="btn btn-sm btn-danger" onclick="deleteData(1);" >Delete</button>
+                </td>
+              </tr>
+              <tr id="data-2">
+				  <td>2
+				  </td>
+                <td>9141</td>
+                <td>Case Hp Iphone</I></td>
+                <td>58</td>
+                <td>
+                    <button type="button" class="btn btn-sm btn-warning" id="edit"  >Edit</button> 
+                    <button type="button" id="btn" class="btn btn-sm btn-danger" onclick="deleteData(2);">Delete</button>
+                </td>
+              </tr>
+              <tr id="data-3">
+				<td>3</td>
+                <td>8943</td>
+                <td>Headphone Y562</td>
+                <td>20</td>
+                <td>
+                    <button type="button" class="btn btn-sm btn-warning" id="edit"  >Edit</button> 
+
+						
+                    <button type="button" id="btn" class="btn btn-sm btn-danger" onclick="deleteData(3);" >Delete</button>
+                </td>
+              </tr>
+              <tr id="data-4">
+				  <td>4</td>
+                <td>6734 </td>
+                <td>Speaker JBL </td>
+                <td>60</td>
+                <td>
+					<button type="button" class="btn btn-sm btn-warning" id="edit"  >Edit</button> 
+                    <button type="button" id="btn" class="btn btn-sm btn-danger" onclick="deleteData(4);" >Delete</button>
+                </td>
+              </tr>
+              <tr id="data-5">
+				  <td>5</td>
+                <td>9834</td>
+                <td>Earphone 6</td>
+                <td>8</td>
+                <td>
+                    <button type="button" class="btn btn-sm btn-warning" id="edit"  >Edit</button> 
+                    <button type="button" id="btn" class="btn btn-sm btn-danger" onclick="deleteData(5);">Delete
+                    </button>
+                </td>
+              </tr>
+
+
+            </tbody>
+            
+          </table>
+          <!--tabel baru -->
+          <table class="table table-bordered" >
+
+            <thead>
+                <!--Inputan-->
+                <tr id="data-6">
+                  <td><input type="text" id="idbarang1" placeholder="IDBarang"></td>
+                  <td><input type="text" id="nbbarang1" placeholder="NamaBarang"></td>
+                  <td><input type="text" id="total1" placeholder="Total"></td>
+                  <td>
+                    <button type="button" class="btn btn-primary" onclick="addRow()"> + Tambah Data</button>
+                  </td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+         
+        <!--End Tabel-->
+			
+            
+        </div>
+    </div>
+
+  
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+    <!-- row delete-->
+
+    <!--end row delete-->
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        $(document).on('click', '#btn', function(e){
+			e.preventDefault();
+            swal({
+                title: "Are you sure?",
+                text: "Apakah anda yakin untuk menghapus?",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            
+            .then((willDelete) => {
+        if (willDelete) {
+
+            swal("Data Telah dihapus!", {
+            icon: "success",
+            });
+            $(this).parents("tr").remove();
+        
+        } else {
+            swal("Data tidak terhapus!");
+            
+
+    }
+
+})            
+        });
+
+
+// edit data
+
+// $(function() {
+//         //Take the data from the TR during the event button
+//         $('table').on('click', '#edit',function (ele) {
+//             //the <tr> variable is use to set the parentNode from "ele
+//             var tr = ele.target.parentNode.parentNode;
+
+//             //I get the value from the cells (td) using the parentNode (var tr)
+
+//             var idbarang1 = tr.cells[1].textContent;
+//             var nbbarang1 = tr.cells[2].textContent;
+//             var total1 = tr.cells[3].textContent;
+            
+
+//             //Prefill the fields with the gathered information
+//             $('#idbarang').val(idbarang1);
+//             $('#nbbarang').val(nbbarang1);
+//             $('#total').val(total1);
+
+
+//             //If you need to update the form data and change the button link
+//             // $("form#ModalForm").attr('action', window.location.href+'/update/');
+//             $("#saveedit").attr('href', window.location.href+'/update/');
+//         });
+//     });
+
+        // edit 5
+    $("table").on("click", "#edit", function(editt){
+        var tr = editt.target.parentNode.parentNode;
+        var idbarang1 = tr.cells[1].textContent;
+        var nbbarang1 = tr.cells[2].textContent;
+        var total1 = tr.cells[3].textContent;
+
+    
+        $(this).parents("tr").find("td:eq(1)").html('<input name="idbarang" value="'+idbarang1+'">');
+        $(this).parents("tr").find("td:eq(2)").html('<input name="nbbarang" value="'+nbbarang1+'">');
+        $(this).parents("tr").find("td:eq(3)").html('<input name="total" value="'+total1+'">');
+    
+        $(this).parents("tr").find("td:eq(4)").prepend("<button class='btn btn-info btn-xs btn-update'>Update</button><button class='btn btn-warning btn-xs btn-cancel'>Cancel</button>")
+        
+        
+        $(this).hide();
+    });
+
+    // update
+    $("table").on("click", ".btn-update", function(){
+        var idbarang1 = $(this).parents("tr").find("input[name='idbarang']").val();
+        var nbbarang1 = $(this).parents("tr").find("input[name='nbbarang']").val();
+        var total1     = $(this).parents("tr").find("input[name='total']").val();
+        
+    
+        $(this).parents("tr").find("td:eq(1)").text(idbarang1);
+        $(this).parents("tr").find("td:eq(2)").text(nbbarang1);
+        $(this).parents("tr").find("td:eq(3)").text(total1);
+     
+        $(this).parents("tr").attr('idbarang', idbarang1);
+        $(this).parents("tr").attr('nbbarang', nbbarang1);
+        $(this).parents("tr").attr('total', total1);
+    
+        $(this).parents("tr").find(".btn-warning").show();
+        
+        $(this).parents("tr").find(".btn-cancel").remove();
+        $(this).parents("tr").find(".btn-update").remove();
+    });
+    // cancel
+    $("table").on("click", ".btn-cancel", function(){
+        var idbarang1 = $(this).parents("tr").find("input[name='idbarang']").val();
+        var nbbarang1 = $(this).parents("tr").find("input[name='nbbarang']").val();
+        var total1     = $(this).parents("tr").find("input[name='total']").val();
+    
+        $(this).parents("tr").find("td:eq(1)").text(idbarang1);
+        $(this).parents("tr").find("td:eq(2)").text(nbbarang1);
+        $(this).parents("tr").find("td:eq(3)").text(total1);
+   
+        $(this).parents("tr").find(".btn-warning").show();
+        $(this).parents("tr").find(".btn-update").remove();
+        $(this).parents("tr").find(".btn-cancel").remove();
+    });
+
+function addRow(){
+        // ambil input value
+        var idbarang1 = document.getElementById('idbarang1').value;
+        var nbbarang1 = document.getElementById('nbbarang1').value;
+        var total1 = document.getElementById('total1').value;
+
+        var table = document.getElementById("tabel1");
+
+        var newRow = table.insertRow(-1);
+
+        var cel1 = newRow.insertCell(0);
+        var cel2 = newRow.insertCell(1);
+        var cel3 = newRow.insertCell(2);
+        var cel4 = newRow.insertCell(3);
+        var cel5 = newRow.insertCell(4);
+        var x = document.getElementById("tabel1").rows.length;
+        var i=1; 
+
+        for (var i; i < x; i++) {
+
+        cel1.innerHTML = i;
+        }
+        cel2.innerHTML = idbarang1;
+        cel3.innerHTML = nbbarang1;
+        cel4.innerHTML = total1;
+        cel5.innerHTML = ' <button type="button" class="btn btn-sm btn-warning" id="edit"  >Edit</button> <button type="button" id="btn" class="btn btn-sm btn-danger" onclick="deleteData(5);">Delete</button>'
+
+        document.getElementById("idbarang1").value = "";
+        document.getElementById("nbbarang1").value = "";
+        document.getElementById("total1").value = "";
+
+
+
+
+
+    }
+    </script>
+
+
+
+</body>
+
+</html>
